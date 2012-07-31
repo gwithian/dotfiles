@@ -1,4 +1,9 @@
-" based on http://mislav.uniqpath.com/2011/12/vim-revisited/
+" .vimrc
+" Tom Hartnell <github.com/gwithian>
+" v 0.1
+" rev. 2012-07-29
+
+" initial settings thanks to http://mislav.uniqpath.com/2011/12/vim-revisited/
 
 " Pathogen runtime management
 call pathogen#infect()
