@@ -1,0 +1,10 @@
+A repo for my current Vim settings (specifically MacVim)
+
+To install:
+
+  git clone https://github.com/gwithian/dotfiles.git ~/.vim
+
+Create simlinks for .vimrc/.gvimrc
+
+  ln -s ~/.vim/vimrc ~/.vimrc
+  ln -s ~/.vim/gvimrc/.gvimrc
