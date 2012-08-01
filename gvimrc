@@ -10,7 +10,8 @@ let g:molokai_original = 1
 colorscheme molokai
 
 " Sets the font and size
-set guifont=Inconsolata-dz:h12
+" set guifont=Inconsolata-dz:h12 - below is patched powerline version
+set guifont=Inconsolata-dz\ for\ Powerline:h12
 
 " Number of horizontal lines on the screen
 set lines=60
