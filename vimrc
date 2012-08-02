@@ -16,6 +16,7 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 set modelines=0                 " avoid security exploits
 
+
 " Remap leader key from '\' to ','
 let mapleader = ","
 
@@ -25,17 +26,22 @@ inoremap jj <ESC>
 " open and switch to new vertical split 
 nnoremap <leader>w <C-w>v<C-w>l
 
-" better splits navigation
+" better navigation in split views
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 "" Whitespace
-set nowrap                      " don't wrap lines
+set wrap                        " wrap lines
+set linebreak
 set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
+set textwidth=80
+set formatoptions=qrn1
+set colorcolumn=80              " highlight the 80th column
+set showbreak=…                 " show symbol for soft broken lines
 
 "" Searching/moving - thanks to <http://stevelosh.com/blog/2010/09/coming-home-to-vim/>
 set hlsearch                    " highlight matches
@@ -52,6 +58,9 @@ vnoremap / /\v
 noremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
+
+"switch between recent buffers
+nnoremap <leader><leader> <c-^>
 
 " Set autocomplete for JS files
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS

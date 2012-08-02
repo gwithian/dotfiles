@@ -27,4 +27,4 @@ set guioptions-=R
 
 " Set fullscreen as default - maximized to horizontal width
 set fuopt+=maxhorz
-set fu
+"set fu
