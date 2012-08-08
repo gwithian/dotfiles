@@ -35,13 +35,19 @@ nnoremap <C-l> <C-w>l
 "" Whitespace
 set wrap                        " wrap lines
 set linebreak
-set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
+set tabstop=4 shiftwidth=4 softtabstop=4    " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set textwidth=80
 set formatoptions=qrn1
 set colorcolumn=80              " highlight the 80th column
 set showbreak=…                 " show symbol for soft broken lines
+
+" Shortcut to rapidly toggle `set list` - <vimcasts.org>
+nmap <leader>l :set list!<CR>
+ 
+" Use the same symbols as TextMate for tabstops and EOLs - <vimcasts.org>
+set listchars=tab:▸\ ,eol:¬
 
 "" Searching/moving - thanks to <http://stevelosh.com/blog/2010/09/coming-home-to-vim/>
 set hlsearch                    " highlight matches
@@ -51,7 +57,7 @@ set smartcase                   " ... unless they contain at least one capital l
 set gdefault                    " Substitute globally on lines
 
 " fix Vim’s horribly broken default regex “handling” by automatically inserting a \v before any string you search for
-nnoremap / /\v                  
+nnoremap / /\v
 vnoremap / /\v
 
 " clear dynamic search highlights with leader-space

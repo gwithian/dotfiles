@@ -125,6 +125,10 @@ else
    hi SpecialKey      guifg=#465457
 end
 
+"Invisible character colors - Tom
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
 "
 " Support for 256-color terminal
 "

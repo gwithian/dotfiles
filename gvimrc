@@ -28,3 +28,6 @@ set guioptions-=R
 " Set fullscreen as default - maximized to horizontal width
 set fuopt+=maxhorz
 "set fu
+
+" toggle fullscreen mode
+map <leader>f :set invfu<CR>
